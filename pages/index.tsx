@@ -2,6 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import HeaderAndPara from "../components/uiComponents/headerwithparagraph";
+import Linkedin from "../assets/linkedin_ico.svg";
+import Github from "../assets/git_ico.svg";
+import Email from "../assets/email_ico.svg";
+
+// TODO: figure out a way to import the svg files
+
+import Image from "next/image";
 
 import LandingStyle from "../styles/landingpage.module.css";
 // Make sure the css from the above is consistent with the other css
@@ -24,7 +31,11 @@ const Home: NextPage = () => {
               TO PROBLEMS. CURRENTLY, I AM LOOKING FOR OPPORTUNITIES TO DO
               FRONT-END DEVELOPMENT AS WELL AS MOBILE DEVELOPMENT.
             </p>
-            <div></div>
+            <div className={LandingStyle.icon_container}>
+              <img src={Github} className={LandingStyle.icon} />
+              <img src={Linkedin} className={LandingStyle.icon} />
+              <img src={Email} className={LandingStyle.icon} />
+            </div>
           </div>
         </div>
 
