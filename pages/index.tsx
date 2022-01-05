@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import HeaderAndPara from "../components/uiComponents/headerwithparagraph";
 import Linkedin from "../assets/linkedin_ico.svg";
 import Github from "../assets/git_ico.svg";
 import Email from "../assets/email_ico.svg";
 
 // TODO: figure out a way to import the svg files
-
-import Image from "next/image";
 
 import LandingStyle from "../styles/landingpage.module.css";
 // Make sure the css from the above is consistent with the other css
@@ -32,9 +31,13 @@ const Home: NextPage = () => {
               FRONT-END DEVELOPMENT AS WELL AS MOBILE DEVELOPMENT.
             </p>
             <div className={LandingStyle.icon_container}>
-              <img src={Github} className={LandingStyle.icon} />
-              <img src={Linkedin} className={LandingStyle.icon} />
-              <img src={Email} className={LandingStyle.icon} />
+              {/*PUT THE ICONS IN THE THINGY*/}
+              <img
+                src="../assets/linkedin_ico.svg"
+                alt="linkedin"
+                width={100}
+                height={100}
+              />
             </div>
           </div>
         </div>
@@ -77,44 +80,57 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className={LandingStyle.projects}>
-          <div className={LandingStyle.projectTextWrapper}>
-            <h1 className="sectionHeader">My Projects</h1>
-            <p id={LandingStyle.projectSubtitle}>
-              <Link href="/projects">
-                <a>CLICK TO VIEW MY PROJECTS</a>
-              </Link>
-              . THESE ARE THE PRIOJECTS THAT I HAVE SELECTED THAT I FEEL BEST
-              REPRESENTS MY BEST QUALITY AND WORK.
-            </p>
+        <div className={LandingStyle.yellowbody}>
+          <div className={LandingStyle.projects}>
+            <div className={LandingStyle.projectTextWrapper}>
+              <h1 id={LandingStyle.projectscontactfontcolor}>My Projects</h1>
+              <p id={LandingStyle.projectSubtitle}>
+                <Link href="/projects">
+                  <a id={LandingStyle.projectSubtitle}>
+                    CLICK TO VIEW MY PROJECTS
+                  </a>
+                </Link>
+                . THESE ARE THE PRIOJECTS THAT I HAVE SELECTED THAT I FEEL BEST
+                REPRESENTS MY BEST QUALITY AND WORK.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className={LandingStyle.contact}>
-          <div>
-            <h1>Contact</h1>
-            <p id={LandingStyle.contactSubtitle}>
-              I WILL TRY TO GET BACK AT YOU IN A TIMELY MANNER. PLEASE MESSAGE
-              ME IF YOU HAVE ANY INQUIRES.
-            </p>
-
-            <p id={LandingStyle.contactSubtitle_email}>
-              PREFERRED: <a href="mailto:vcarr048@fiu.edu">VCARR048@FIU.EDU</a>
-            </p>
-            <p id={LandingStyle.contactSubtitle_email}>
-              SECONDARY:{" "}
-              <a href="mailto:vincentcarrancho@gmail.com">
-                VINCENTCARRANCHO@GMAIL.COM
-              </a>
-            </p>
-
-            <p id={LandingStyle.contactSubtitle_linkedin}>
-              CONNECT WITH ME ON{" "}
-              <a href="https://www.linkedin.com/in/vincentcarrancho/">
-                LINKEDIN
-              </a>
-              .
-            </p>
+          <div className={LandingStyle.contact}>
+            <div>
+              <h1 id={LandingStyle.projectscontactfontcolor}>Contact</h1>
+              <p id={LandingStyle.contactSubtitle}>
+                I WILL TRY TO GET BACK AT YOU IN A TIMELY MANNER. PLEASE MESSAGE
+                ME IF YOU HAVE ANY INQUIRES.
+              </p>
+              <p id={LandingStyle.contactSubtitle_email}>
+                PREFERRED:{" "}
+                <a
+                  href="mailto:vcarr048@fiu.edu"
+                  id={LandingStyle.projectscontactfontcolor}
+                >
+                  VCARR048@FIU.EDU
+                </a>
+              </p>
+              <p id={LandingStyle.contactSubtitle_email}>
+                SECONDARY:{" "}
+                <a
+                  href="mailto:vincentcarrancho@gmail.com"
+                  id={LandingStyle.projectscontactfontcolor}
+                >
+                  VINCENTCARRANCHO@GMAIL.COM
+                </a>
+              </p>
+              <p id={LandingStyle.contactSubtitle_linkedin}>
+                CONNECT WITH ME ON{" "}
+                <a
+                  href="https://www.linkedin.com/in/vincentcarrancho/"
+                  id={LandingStyle.projectscontactfontcolor}
+                >
+                  LINKEDIN
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </div>

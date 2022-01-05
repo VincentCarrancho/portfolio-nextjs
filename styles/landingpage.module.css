@@ -34,7 +34,6 @@
 
   .contact {
     margin-top: 10vw;
-    margin-bottom: 10vw;
   }
 
   .welcomeTitle {
@@ -105,11 +104,11 @@
 
   .projects {
     margin-top: 10vw;
+    padding-top: 10vh;
   }
 
   .contact {
     margin-top: 10vw;
-    margin-bottom: 10vw;
   }
 
   .welcomeTitle {
@@ -123,7 +122,6 @@
     display: flex;
     justify-content: space-evenly;
   }
-
   .subheadingWrapper {
     display: flex;
     justify-content: space-between;
@@ -138,11 +136,13 @@
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
+    color: #1b1b1b;
   }
 
   #contactSubtitle,
   #contactSubtitle_email,
   #contactSubtitle_linkedin {
+    color: #1b1b1b;
     font-size: 1.25vw;
     width: 35vw;
     margin-left: auto;
@@ -162,4 +162,13 @@
   #contactSubtitle_linkedin {
     margin-top: 2vw;
   }
+
+  .yellowbody {
+    background-color: #c7bd68;
+    padding-bottom: 20vh;
+  }
+}
+
+#projectscontactfontcolor {
+  color: #1b1b1b;
 }
