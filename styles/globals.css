@@ -30,20 +30,8 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
   p {
-    font-size: 1.75vw;
+    font-size: 3.5vw;
     text-align: center;
     margin: 0;
   }
@@ -51,21 +39,85 @@ a {
   h2,
   h3 {
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 2.5vw;
     margin-bottom: 0.75em;
     font-weight: 400;
   }
 
   h1 {
     font-weight: 400;
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
   }
 }
 
-#p_seriff {
-  font-family: serif;
-  font-style: italic;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 7vw;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 7vw;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 7vw;
+    text-align: center;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
