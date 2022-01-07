@@ -13,29 +13,71 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
   .footercontainer {
-    padding-top: 2.5vw;
-    padding-bottom: 5vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
   }
   .topdiv {
     padding-bottom: 1vw;
   }
   #topdivtext {
-    font-size: 1vw;
+    font-size: 2.5vw;
   }
   #copyright {
     padding-top: 1vw;
-    font-size: 0.75vw;
+    font-size: 2.5vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footercontainer {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  .topdiv {
+    padding-bottom: 1vw;
+  }
+  #topdivtext {
+    font-size: 1.5vw;
+  }
+  #copyright {
+    padding-top: 1vw;
+    font-size: 1.5vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footercontainer {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  .topdiv {
+    padding-bottom: 1vw;
+  }
+  #topdivtext {
+    font-size: 1.5vw;
+  }
+  #copyright {
+    padding-top: 1vw;
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footercontainer {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  .topdiv {
+    padding-bottom: 1vw;
+  }
+  #topdivtext {
+    font-size: 1.5vw;
+  }
+  #copyright {
+    padding-top: 1vw;
+    font-size: 1vw;
   }
 }

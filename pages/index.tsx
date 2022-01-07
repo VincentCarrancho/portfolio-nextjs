@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           name="Vincent Carrancho"
           content="Vincent Carrancho Personal Website"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div>
