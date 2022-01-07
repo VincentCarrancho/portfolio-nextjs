@@ -19,7 +19,7 @@ function Footer() {
           </p>
         </div>
         <p id={FooterStyle.copyright}>@COPYRIGHT. ALL RIGHTS RESERVED</p>
-        <p id={FooterStyle.copyright}>LAST UPDATED: 1/5/2022</p>
+        <p id={FooterStyle.copyright}>LAST UPDATED: 1/7/2022</p>
       </div>
     </div>
   );
