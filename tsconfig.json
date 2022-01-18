@@ -20,6 +20,12 @@
       "@assets": ["assets/"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "personalwebsite/schemas/schema.js",
+    "components/client.js"
+  ],
   "exclude": ["node_modules"]
 }

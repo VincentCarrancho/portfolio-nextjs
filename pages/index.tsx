@@ -5,6 +5,7 @@ import HeaderAndPara from "../components/uiComponents/headerwithparagraph";
 import LandingStyle from "../styles/landingpage.module.css";
 import IconContainer from "components/uiComponents/iconcontainer";
 import Footer from "components/uiComponents/footer";
+import AllProjects from "components/uiComponents/allprojcomp";
 
 // Make sure the css from the above is consistent with the other css
 
@@ -84,6 +85,12 @@ const Home: NextPage = () => {
                 . THESE ARE THE PRIOJECTS THAT I HAVE SELECTED THAT I FEEL BEST
                 REPRESENTS MY BEST QUALITY AND WORK.
               </p>
+            </div>
+            <h2 id={LandingStyle.projectscontactfontcolor}>
+              CMS TESTING BELOW
+            </h2>
+            <div>
+              <AllProjects fontcolor={LandingStyle.projectscontactfontcolor} />
             </div>
           </div>
           <div className={LandingStyle.contact}>
