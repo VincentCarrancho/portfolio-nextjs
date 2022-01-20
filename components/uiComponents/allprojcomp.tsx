@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import sanityClient from "../client";
+import ProjectStyling from "../../styles/projectcard.module.css";
+import ProjectCard from "./individualcard";
 
-// TODO: Fix expansion of the cards to isolate only one.
-// TODO: Fix problem in which the
+// TODO: Work on styling the cards with CSS grid and make it responsive
 
 export default function AllProjects(props: any) {
   const [ProjectsData, setProjectsData] = useState<any[]>([null]); // for some reason this implementation of useState with a null array worked
-  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     let proj = sanityClient
@@ -31,31 +31,20 @@ export default function AllProjects(props: any) {
     );
   } else {
     return (
-      <div>
+      <div className={ProjectStyling.uiwrapper}>
         <h2 id={props.fontcolor}>All Projects (CMS TEST)</h2>
-        {ProjectsData &&
-          ProjectsData.map((project, index) => (
-            <div key={index + project.projname}>
-              <h2 id={props.fontcolor}>{project.projname}</h2>
-              <h3 id={props.fontcolor}>{project.dateofproj}</h3>
-              <img src={project.image} alt="" />
-              <button
-                onClick={() => {
-                  setIsExpanded(!isExpanded);
-                }}
-              >
-                <h3>Read More</h3>
-              </button>
-              {isExpanded && (
-                <div>
-                  <p id={props.fontcolor}>{project.projdesc}</p>
-                  <p>
-                    <a href={project.url}></a>
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
+        <section className={ProjectStyling.projectwrapper}>
+          {ProjectsData &&
+            ProjectsData.map((project, index) => (
+              <ProjectCard
+                fontcolor={ProjectStyling.fontcolor}
+                projname={project.projname}
+                dateofproj={project.dateofproj}
+                projdesc={project.projdesc}
+                url={project.url}
+              />
+            ))}
+        </section>
       </div>
     );
   }
