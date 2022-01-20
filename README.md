@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vincent Carrancho Personal Website
 
-## Getting Started
+![Me](./readme_assets/icave_1.jpeg)
 
-First, run the development server:
+**Hello!** My name is Vincent Carrancho and I am a sophomore studying Computer Science at Florida International University! This is my personal website using Next.js and Sanity.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Although I am a beginner at React.js I decided to use Next.js instead of `create-react-app` just so my website could be SEO optimized (honestly, as a beginner I should not be worrying about that at all, but I just wanted to use it). Plus, the Next.js routing was more convenient to use than using react router.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## User Interface
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![The Original Figma Design](./readme_assets/figma.png)
+As you can see this is a mockup that I made in Figma. It is basically only 1 single scrollable page. What is missing here is the individual projects page–which is a TBD as of January 21st–and a mobile version. But overall, I think I followed suit in the project but not perfectly–which is completely okay by my me.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Some technical details
 
-## Learn More
+So as I mentioned earlier, this site was made using Next.js and Sanity. Both of which I am pretty new–especially Sanity. This website is mostly a static website but however, there is one section that I feel used React and Sanity effectively: the projects section.
 
-To learn more about Next.js, take a look at the following resources:
+Originally for the projects section, I was going to make a template of a component and pass props into the component to make it show in the UI, but I realized that this is the perfect situation to use a CMS–I then decided on using Sanity because for some reason the other CMS' that I looked into, I just could not figure out how to take an existing React project and implement their CMS, Sanity was just the easiest.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+As of January 21st, I am thinking to make a mini project card section in the main page of the website, then when you click on it, it generates a whole page of that specific project. This is where I envision Next.js' dynamic routing to come in.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## I'll update you later
 
-## Deploy on Vercel
+For now that is all I got. I'll be sure to update the readme as the project goes on.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for taking the time to read this project!
