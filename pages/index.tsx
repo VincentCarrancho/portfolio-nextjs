@@ -82,13 +82,10 @@ const Home: NextPage = () => {
                     CLICK TO VIEW MY PROJECTS
                   </a>
                 </Link>
-                . THESE ARE THE PRIOJECTS THAT I HAVE SELECTED THAT I FEEL BEST
+                . THESE ARE THE PROJECTS THAT I HAVE SELECTED THAT I FEEL BEST
                 REPRESENTS MY BEST QUALITY AND WORK.
               </p>
             </div>
-            <h2 id={LandingStyle.projectscontactfontcolor}>
-              CMS TESTING BELOW
-            </h2>
             <div>
               <AllProjects fontcolor={LandingStyle.projectscontactfontcolor} />
             </div>

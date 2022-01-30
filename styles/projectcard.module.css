@@ -11,18 +11,29 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .projectwrapper {
-    display: grid;
-    gap: 1em;
-
-    grid-template-columns: repeat(auto-fit, minmax(10vw, 50vw));
-  }
 }
 
 @media only screen and (min-width: 1200px) {
+  .projectwrapper {
+    padding-top: 2.5vh;
+  }
+
+  .projectcard {
+    margin: 1vh;
+    width: 50vh;
+  }
 }
 
 .projectcard {
+  transition: 200ms;
+  background-color: #cfc66e;
+}
+
+.projectcard:hover {
+  background-color: #e0d675;
+}
+
+.projectcard:active {
   background-color: antiquewhite;
 }
 
@@ -32,6 +43,21 @@
   align-items: center;
 }
 
-#fontcolor {
+.projectwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-around;
+}
+
+#projectHeading {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.25vw;
   color: #1b1b1b;
+}
+
+#projectSubheading {
+  color: #1b1b1b;
+  font-style: italic;
 }

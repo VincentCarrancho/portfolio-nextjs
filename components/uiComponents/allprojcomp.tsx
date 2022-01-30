@@ -7,7 +7,7 @@ import ProjectCard from "./individualcard";
 
 export default function AllProjects(props: any) {
   const [ProjectsData, setProjectsData] = useState<any[]>([null]); // for some reason this implementation of useState with a null array worked
-
+  let isLoaded = true;
   useEffect(() => {
     let proj = sanityClient
       .fetch(
@@ -20,7 +20,9 @@ export default function AllProjects(props: any) {
     }`
       )
       .then((data) => setProjectsData(data))
-      .catch(console.error); // calls the setProjects data to update the state
+      .catch(console.error);
+
+    isLoaded = true; // calls the setProjects data to update the state
   }, []);
 
   if (ProjectsData[0] == null) {
@@ -32,19 +34,22 @@ export default function AllProjects(props: any) {
   } else {
     return (
       <div className={ProjectStyling.uiwrapper}>
-        <h2 id={props.fontcolor}>All Projects (CMS TEST)</h2>
-        <section className={ProjectStyling.projectwrapper}>
-          {ProjectsData &&
-            ProjectsData.map((project, index) => (
-              <ProjectCard
-                fontcolor={ProjectStyling.fontcolor}
-                projname={project.projname}
-                dateofproj={project.dateofproj}
-                projdesc={project.projdesc}
-                url={project.url}
-              />
-            ))}
-        </section>
+        {isLoaded && (
+          <section className={ProjectStyling.projectwrapper}>
+            {ProjectsData &&
+              ProjectsData.map((project, index) => (
+                <ProjectCard
+                  ProjectCardStyle={ProjectStyling.projectcard}
+                  projectHeading={ProjectStyling.projectHeading}
+                  projectSubheading={ProjectStyling.projectSubheading}
+                  projname={project.projname}
+                  dateofproj={project.dateofproj}
+                  projdesc={project.projdesc}
+                  git={project.url}
+                />
+              ))}
+          </section>
+        )}
       </div>
     );
   }
