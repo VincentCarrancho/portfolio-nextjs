@@ -1,149 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 
 body {
-  background-color: #1b1b1b;
   margin: 0;
+  padding: 0;
 }
 
-.root {
+.h1 {
+  font-family: "Righteous", cursive;
   margin: 0;
   padding: 0;
 }
-h1 {
-  padding: 0;
-  margin: 0;
-}
-p {
+
+.p {
   font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  color: #c7bd68;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  p {
-    font-size: 3.5vw;
-    text-align: center;
-    margin: 0;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
-    font-size: 2.5vw;
-    margin-bottom: 0.75em;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 7vw;
-    text-align: center;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  p {
-    font-size: 3vw;
-    text-align: center;
-    margin: 0;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
-    font-size: 2.5vw;
-    margin-bottom: 0.75em;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 7vw;
-    text-align: center;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.5vw;
-    text-align: center;
-    margin: 0;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
-    font-size: 1vw;
-    margin-bottom: 0.75em;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 7vw;
-    text-align: center;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  p {
-    font-size: 1.5vw;
-    text-align: center;
-    margin: 0;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
-    font-size: 1vw;
-    margin-bottom: 0.75em;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 7vw;
-    text-align: center;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1200px) {
-  p {
-    font-size: 1.25vw;
-    text-align: center;
-    margin: 0;
-  }
-
-  h2,
-  h3 {
-    text-align: center;
-    font-size: 1vw;
-    margin-bottom: 0.75em;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 5vw;
-    text-align: center;
-  }
-}
-
-#p_seriff {
-  font-family: serif;
-  font-style: italic;
 }

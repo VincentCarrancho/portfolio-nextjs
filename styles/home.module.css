@@ -1,0 +1,46 @@
+.background {
+  background: radial-gradient(#2b798a, #51276b, #213c5c);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* TODO: Migrate any layout information to layout.module.css */
+.buttonwrapper {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonwrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .buttonwrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .buttonwrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
