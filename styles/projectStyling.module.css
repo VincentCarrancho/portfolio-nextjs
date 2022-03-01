@@ -9,24 +9,6 @@
   justify-content: center;
   align-items: center;
 }
-/* TODO: Migrate any layout information to layout.module.css */
-.buttonwrapper {
-  display: flex;
-}
-
-@media only screen and (max-width: 600px) {
-  .buttonwrapper {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .buttonwrapper {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -36,5 +18,28 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .background {
+    display: flex;
+    flex-direction: row;
+    /* 
+    TODO: based on the Figma design put the padding as such
+    padding-left: 20vw;
+    padding-right: 20vw; */
   }
 }

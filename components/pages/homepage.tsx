@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
 import { Button, Title, Text, useMantineTheme, Space } from "@mantine/core";
 import HomeStyling from "../../styles/home.module.css";
-import Layout from "../../styles/layout.module.css";
 
 function Homepage() {
   const theme = useMantineTheme();
 
   return (
     <div className={HomeStyling.background}>
-      <div className={Layout.homelayout}>
+      <div>
         {/* <h1 className={TextStyling.Title}>Vincent Carrancho</h1> */}
         <Title
           className="h1"
@@ -20,7 +18,7 @@ function Homepage() {
         >
           Vincent Carrancho
         </Title>
-        <div className={Layout.home}>
+        <div>
           <Text
             className="p"
             align="justify"

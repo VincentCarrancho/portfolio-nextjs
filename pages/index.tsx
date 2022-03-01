@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Homepage from "components/pages/homepage";
 import InformationPage from "components/pages/information";
-import { MantineProvider } from "@mantine/core";
+import { MantineProvider, Header, Button, Text } from "@mantine/core";
 import ProjectsPage from "components/pages/projectsPage";
 
 // Make sure the css from the above is consistent with the other css
