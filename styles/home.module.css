@@ -15,8 +15,8 @@
 }
 
 .backgroundImage {
-  width: 100vw;
   height: 100vh;
+  max-width: 100vw;
   mix-blend-mode: lighten;
   filter: brightness(1.25);
   object-fit: cover;
@@ -44,8 +44,8 @@
     justify-content: space-around;
   }
   .content {
-    padding-left: 35vw;
-    padding-right: 35vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
   }
 }
 

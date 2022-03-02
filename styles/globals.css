@@ -17,9 +17,10 @@ body {
 .p {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: clamp(18px, 1.5vw, 24px);
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 #home_para {
   color: #9ae7f8;
+  filter: blur(0.5px);
 }

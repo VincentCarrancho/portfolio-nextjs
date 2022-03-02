@@ -38,7 +38,14 @@ function ProjectsPage() {
         >
           Projects
         </Title>
-        <Text className="p">
+        <Text
+          className="p"
+          id="home_para"
+          sx={(theme) => ({
+            fontStyle: "italic",
+            fontWeight: "500",
+          })}
+        >
           These are the projects that I decided to showcase. In every one of
           these projects, I have learned new things, challenged, myself, and
           solved many problems during its development period.
@@ -47,7 +54,17 @@ function ProjectsPage() {
       <div className={ProjectStyling.right}>
         {projectsData[0] == null ? (
           <div>
-            <h1 className="h1">Loading</h1>
+            <Title
+              className="h1"
+              order={1}
+              sx={{
+                color: "white",
+                textShadow:
+                  "0.2px 0.2px 1.5px #F5FDFF, 0.5px 0.5px 1.5px #F5FDFF",
+              }}
+            >
+              Loading
+            </Title>
             <Loader />
           </div>
         ) : (
@@ -56,15 +73,36 @@ function ProjectsPage() {
               {projectsData.map((project, index) => {
                 // limits the amount of chars inside the project description to be 297.
                 let projectDescription: string = project.projdesc;
-                const length = 297;
-                projectDescription = projectDescription.substring(0, length);
-                projectDescription += "...";
+                const length = 247;
+                if (projectDescription.length > length) {
+                  projectDescription = projectDescription.substring(0, length);
+                  projectDescription += "...";
+                }
                 return (
                   <Accordion.Item
-                    label={<Text className="p">{project.projname}</Text>}
+                    label={
+                      <Text
+                        className="p"
+                        sx={{
+                          color: "white",
+                          textShadow:
+                            "0.2px 0.2px 1.5px #F5FDFF, 0.5px 0.5px 1.5px #F5FDFF",
+                        }}
+                      >
+                        {project.projname}
+                      </Text>
+                    }
                     key="project-accordion"
                   >
-                    <Text>{projectDescription}</Text>
+                    <Text
+                      sx={{
+                        fontSize: "16px",
+                        color: "#9ae7f8",
+                        filter: "blur(0.4px)",
+                      }}
+                    >
+                      {projectDescription}
+                    </Text>
                   </Accordion.Item>
                 );
               })}
@@ -75,13 +113,6 @@ function ProjectsPage() {
         {/**
          * Below is just the tester button to make sure we have fetched the data
          */}
-        <Button
-          onClick={() => {
-            console.log(projectsData[0].projdesc);
-          }}
-        >
-          Test
-        </Button>
       </div>
     </div>
   );

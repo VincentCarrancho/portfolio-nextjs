@@ -4,7 +4,7 @@
   background-color: #10132c;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -17,4 +17,10 @@
 }
 .content {
   position: absolute;
+}
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 35%;
+    padding-right: 10vw;
+  }
 }
