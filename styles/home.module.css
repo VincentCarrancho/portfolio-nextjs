@@ -14,9 +14,27 @@
   display: flex;
 }
 
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: lighten;
+  filter: brightness(1.25);
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+}
+
 @media only screen and (max-width: 600px) {
   .buttonwrapper {
     flex-direction: column;
+  }
+
+  .content {
+    /* 
+    TODO: put the padding to shrink the text
+    */
   }
 }
 
@@ -24,6 +42,10 @@
   .buttonwrapper {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .content {
+    padding-left: 35vw;
+    padding-right: 35vw;
   }
 }
 

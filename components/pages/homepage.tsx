@@ -1,4 +1,5 @@
 import { Button, Title, Text, useMantineTheme, Space } from "@mantine/core";
+import Image from "next/image";
 import HomeStyling from "../../styles/home.module.css";
 
 function Homepage() {
@@ -6,8 +7,12 @@ function Homepage() {
 
   return (
     <div className={HomeStyling.background}>
-      <div>
-        {/* <h1 className={TextStyling.Title}>Vincent Carrancho</h1> */}
+      <img
+        src="/images/img.JPG"
+        alt="Background Image of Me"
+        className={HomeStyling.backgroundImage}
+      />
+      <div className={HomeStyling.content}>
         <Title
           className="h1"
           order={1}
@@ -21,20 +26,19 @@ function Homepage() {
         <div>
           <Text
             className="p"
+            id="home_para"
             align="justify"
             // @ts-ignore
             color={theme.colors.skyblue}
-            sx={(theme) => ({})}
+            sx={(theme) => ({
+              fontStyle: "italic",
+              fontWeight: "500",
+            })}
           >
             Project Management Intern at Metlife’s Technical University (MTU).
-            Computer Science Student @ Florida International University; Class
-            of 2024
+            Computer Science Student and SparkDev Program Manager @ Florida
+            International University–Class of 2024.
           </Text>
-          {/* <h3 className={TextStyling.subTitle}>
-              Project Management Intern at Metlife’s Technical University (MTU).
-              Computer Science Student @ Florida International University; Class of
-              2024
-            </h3> */}
         </div>
         <Space h={"lg"} />
         <div className={HomeStyling.buttonwrapper}>

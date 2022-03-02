@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 
-/* 
-Figure out the responsive typography 
-*/
-
-:root {
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -18,11 +11,15 @@ body {
   font-family: "Righteous", cursive;
   margin: 0;
   padding: 0;
-  font-size: clamp(64px, 4vw, 96px);
+  font-size: clamp(64px, 4vw, 84px);
 }
 
 .p {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: clamp(18px, 1.5vw, 28px);
+  font-size: clamp(18px, 1.5vw, 24px);
+}
+
+#home_para {
+  color: #9ae7f8;
 }

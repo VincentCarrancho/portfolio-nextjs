@@ -1,0 +1,20 @@
+.background {
+  height: 100vh;
+  /* TODO: Change the background color to the moving gradient in the future */
+  background-color: #10132c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(3px);
+  opacity: 10%;
+}
+.content {
+  position: absolute;
+}
